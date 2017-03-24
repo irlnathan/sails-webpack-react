@@ -1,4 +1,9 @@
-# sails-webpack-seed
+
+# sails-webpack-react
+
+Slight modifications to sails-webpack-seed to incorporate React.
+
+## README.md for sails-webpack-seed
 
 a [Sails](http://sailsjs.com) 1.0 application utilizing the Webpack 2.x asset bundler.
 
