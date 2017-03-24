@@ -25,7 +25,8 @@ module.exports.webpack = {
   *                                                                          *
   ***************************************************************************/
   entry: {
-    'homepage': './assets/js/homepage.js'
+    // 'homepage': './assets/js/homepage.js'
+    entry: './assets/js/app.jsx',
   },
 
 
@@ -36,9 +37,24 @@ module.exports.webpack = {
   *                                                                          *
   ***************************************************************************/
   output: {
-    filename: 'js/[name].bundle.js',
+    // filename: 'js/[name]=.bundle.js',
+    filename: 'js/bundle.js',
     path: path.resolve(__dirname, '..', '.tmp', 'public')
   },
+
+  // Added this so you don't have to include extensions when using require
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
+  // Added the babel-loaer to transpile jsx syntax to js
+  {
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015']
+        },
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/
+      }
 
   /***************************************************************************
   *                                                                          *
