@@ -37,8 +37,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/scottmac/sails-webpack-seed.git"
+    "url": "git@github.com:irlnathan/sails-webpack-react.git"
   },
-  "author": "scottmac",
+  "author": "irlnathan",
   "license": ""
 }
