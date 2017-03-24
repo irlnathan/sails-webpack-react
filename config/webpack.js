@@ -46,15 +46,6 @@ module.exports.webpack = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  // Added the babel-loaer to transpile jsx syntax to js
-  {
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015']
-        },
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/
-      }
 
   /***************************************************************************
   *                                                                          *
@@ -74,7 +65,16 @@ module.exports.webpack = {
       {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract({ use: 'css-loader!less-loader' })
-      }
+      },
+      // Added the babel-loaer to transpile jsx syntax to js
+      {
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015']
+        },
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/
+      },
     ],
   },
 
