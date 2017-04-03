@@ -3,6 +3,8 @@
 
 Slight modifications to sails-webpack-seed to incorporate React.
 
+> The project is set up to do a React Single Page App.
+
 ## README.md for sails-webpack-seed
 
 a [Sails](http://sailsjs.com) 1.0 application utilizing the Webpack 2.x asset bundler.
