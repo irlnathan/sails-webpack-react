@@ -1,7 +1,7 @@
 
 # sails-webpack-react
 
-Slight modifications to sails-webpack-seed to incorporate React.
+Slight modifications to [sails-webpack-seed](https://github.com/sailshq/sails-webpack-seed) to incorporate React.
 
 > The project is set up to do a React Single Page App.
 
